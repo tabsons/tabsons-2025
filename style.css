@@ -353,6 +353,15 @@ section {
     text-align: center;
 }
 
+.our-products-title {
+    color: #00d4ff;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    text-align: center;
+}
+
 .carousel-container {
     position: relative;
     max-width: 1200px;

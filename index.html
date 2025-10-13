@@ -2,9 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover Tabsons' AI-driven media solutions at IBC 2025. Explore the future of content with our innovative cloud-native ecosystem.">
-    <title>Tabsons at BROADCAST INDIA 2025 | FOR INFINITE POSSIBLITES.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Discover Tabsons' AI-driven media solutions at BROADCAST INDIA 2025. Explore the future of content with our innovative cloud-native ecosystem.">
+    <meta name="keywords" content="Tabsons, Broadcast India 2025, AI dubbing, video streaming, content management, AI subtitle, media solutions">
+    <meta name="author" content="Tabsons">
+    <meta property="og:title" content="Tabsons at BROADCAST INDIA 2025 | FOR INFINITE POSSIBILITIES">
+    <meta property="og:description" content="Discover Tabsons' AI-driven media solutions at BROADCAST INDIA 2025. Explore the future of content with our innovative cloud-native ecosystem.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tabsons.co.in">
+    <meta name="theme-color" content="#00E5FF">
+    <link rel="icon" href="logo (1).png" type="image/png">
+    <title>Tabsons at BROADCAST INDIA 2025 | FOR INFINITE POSSIBILITIES</title>
     
     <!-- FONTS: Oswald for Headlines, Lato for Body -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,22 +25,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <style>
-        a:hover > div {
-            transform: translateY(-10px);
-            border-color: rgba(255, 255, 255, 0.3);
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
-        }
-        
-        a:hover > div > div:first-child {
-            opacity: 0.6;
-        }
-        
-        a:hover img {
-            transform: scale(1.1);
-        }
-    </style>
 
     <!-- Advanced Interactive Particle Background -->
     <canvas id="synapse-canvas"></canvas>
@@ -79,12 +71,12 @@
                 <div class="hero-layout">
                     <!-- Left Column: Text -->
                     <div class="hero-content">
-                        <h1 class="hero-title"> TABSONS  AT BROADCAST INDIA 2025</h1>
+                        <h1 class="hero-title">TABSONS AT BROADCAST INDIA 2025</h1>
                         <p class="hero-subtitle">We showcased our latest range of products and solutions with you in BROADCAST INDIA 2025 .</p>
                     </div>
                     <!-- Right Column: Event Video -->
                     <div class="hero-image">
-                        <video src="https://github.com/tabsons/tabsons-2025/releases/download/video-assets/hero-vid.mp4" autoplay loop muted playsinline controls class="hero-video"></video>
+                        <video id="heroVideo" src="hero-vid.mp4" autoplay loop muted playsinline controls class="hero-video"></video>
                     </div>
                 </div>
             </div>
@@ -96,152 +88,413 @@
 
         <!-- SERVICES SECTION -->
         <section id="services" style="padding: 80px 20px;">
-        <div class="container" style="max-width: 1400px; margin: 0 auto;">
-            <h2 style="text-align: center; font-size: 3rem; font-weight: 700; margin-bottom: 60px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; letter-spacing: 2px;">
-                OUR PRODUCTS
-            </h2>
+    <div class="container" style="max-width: 1400px; margin: 0 auto;">
+        <h2 class="our-products-title">Our Products</h2>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 40px; padding: 0 20px;">
             
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 40px; padding: 0 20px;">
-                
-                <!-- Product 1: Live Dubbing -->
-                <a href="https://lingopal.ai" target="_blank" style="text-decoration: none; color: inherit; display: block; transition: transform 0.3s ease;">
-                    <div style="background: rgba(255, 255, 255, 0.03); border-radius: 20px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.1); position: relative; transition: all 0.3s ease; height: 100%;">
-                        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(135deg, rgba(102, 126, 234, 0.3), rgba(118, 75, 162, 0.3)); opacity: 0; transition: opacity 0.3s ease; pointer-events: none;"></div>
+            <!-- Product 1: Live Dubbing -->
+            <a href="https://lingopal.ai" target="_blank" style="text-decoration: none; color: inherit; display: block; transition: transform 0.3s ease;">
+                <div style="background: rgba(255, 255, 255, 0.03); border-radius: 20px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.1); position: relative; transition: all 0.3s ease; height: 100%;">
+                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(135deg, rgba(102, 126, 234, 0.3), rgba(118, 75, 162, 0.3)); opacity: 0; transition: opacity 0.3s ease; pointer-events: none;"></div>
+                    
+                    <div style="position: relative;">
+                        <div style="width: 100%; height: 280px; overflow: hidden; background: #1a1a2e;">
+                            <img src="images/live.png" alt="Live Dubbing" style="width: 100%; height: 120%; object-fit: cover; transition: transform 0.3s ease;">
+                        </div>
                         
-                        <div style="position: relative;">
-                            <div style="width: 100%; height: 280px; overflow: hidden; background: #1a1a2e;">
-                                <img src="https://i.postimg.cc/6QjSspgF/Generated-Image-October-13-2025-9-16-PM.png" alt="Live Dubbing" style="width: 100%; height: 120%; object-fit: cover; transition: transform 0.3s ease;">
-                            </div>
-                            
-                            <div style="padding: 30px;">
-                                <h3 style="font-size: 1.5rem; font-weight: 600; margin: 0 0 15px 0; color: #667eea;">
-                                    Live Dubbing
-                                </h3>
-                                <p style="font-size: 1rem; line-height: 1.6; color: rgba(255, 255, 255, 0.7); margin: 0;">
-                                    AI-powered dubbing solutions for multilingual content. Perfect for global broadcasts.
-                                </p>
-                            </div>
+                        <div style="padding: 30px;">
+                            <h3 style="font-size: 1.5rem; font-weight: 600; margin: 0 0 15px 0; color: #667eea;">
+                                Live Dubbing
+                            </h3>
+                            <p style="font-size: 1rem; line-height: 1.6; color: rgba(255, 255, 255, 0.7); margin: 0;">
+                                AI-powered dubbing solutions for multilingual content. Perfect for global broadcasts.
+                            </p>
                         </div>
                     </div>
-                </a>
+                </div>
+            </a>
 
-                <!-- Product 2: Video Streaming -->
-                <a href="http://203.122.33.117/mobile/Default.aspx" target="_blank" style="text-decoration: none; color: inherit; display: block; transition: transform 0.3s ease;">
-                    <div style="background: rgba(255, 255, 255, 0.03); border-radius: 20px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.1); position: relative; transition: all 0.3s ease; height: 100%;">
-                        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(135deg, rgba(240, 147, 251, 0.3), rgba(245, 87, 108, 0.3)); opacity: 0; transition: opacity 0.3s ease; pointer-events: none;"></div>
+            <!-- Product 2: Video Streaming -->
+            <a href="http://203.122.33.117/mobile/Default.aspx" target="_blank" style="text-decoration: none; color: inherit; display: block; transition: transform 0.3s ease;">
+                <div style="background: rgba(255, 255, 255, 0.03); border-radius: 20px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.1); position: relative; transition: all 0.3s ease; height: 100%;">
+                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(135deg, rgba(240, 147, 251, 0.3), rgba(245, 87, 108, 0.3)); opacity: 0; transition: opacity 0.3s ease; pointer-events: none;"></div>
+                    
+                    <div style="position: relative;">
+                        <div style="width: 100%; height: 280px; overflow: hidden; background: #1a1a2e;">
+                            <img src="images/video.png" alt="Video Streaming" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+                        </div>
                         
-                        <div style="position: relative;">
-                            <div style="width: 100%; height: 280px; overflow: hidden; background: #1a1a2e;">
-                                <img src="https://i.postimg.cc/XqC984RZ/d3dd8fa4-43a6-4b52-88c8-c007ab98a05f.png" alt="Video Streaming" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
-                            </div>
-                            
-                            <div style="padding: 30px;">
-                                <h3 style="font-size: 1.5rem; font-weight: 600; margin: 0 0 15px 0; color: #f093fb;">
-                                    Video Streaming
-                                </h3>
-                                <p style="font-size: 1rem; line-height: 1.6; color: rgba(255, 255, 255, 0.7); margin: 0;">
-                                    Broadcast-grade playout built for the cloud. Deliver channels anywhere with unparalleled resilience, scalability, and operational efficiency.
-                                </p>
-                            </div>
+                        <div style="padding: 30px;">
+                            <h3 style="font-size: 1.5rem; font-weight: 600; margin: 0 0 15px 0; color: #f093fb;">
+                                Video Streaming
+                            </h3>
+                            <p style="font-size: 1rem; line-height: 1.6; color: rgba(255, 255, 255, 0.7); margin: 0;">
+                                Broadcast-grade playout built for the cloud. Deliver channels anywhere with unparalleled resilience, scalability, and operational efficiency.
+                            </p>
                         </div>
                     </div>
-                </a>
+                </div>
+            </a>
 
-                <!-- Product 3: Post Broadcasting -->
-                <a href="https://example.com/post-broadcasting" target="_blank" style="text-decoration: none; color: inherit; display: block; transition: transform 0.3s ease;">
-                    <div style="background: rgba(255, 255, 255, 0.03); border-radius: 20px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.1); position: relative; transition: all 0.3s ease; height: 100%;">
-                        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(135deg, rgba(79, 172, 254, 0.3), rgba(0, 242, 254, 0.3)); opacity: 0; transition: opacity 0.3s ease; pointer-events: none;"></div>
+            <!-- Product 3: Post Broadcasting -->
+            <a href="https://example.com/post-broadcasting" target="_blank" style="text-decoration: none; color: inherit; display: block; transition: transform 0.3s ease;">
+                <div style="background: rgba(255, 255, 255, 0.03); border-radius: 20px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.1); position: relative; transition: all 0.3s ease; height: 100%;">
+                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(135deg, rgba(79, 172, 254, 0.3), rgba(0, 242, 254, 0.3)); opacity: 0; transition: opacity 0.3s ease; pointer-events: none;"></div>
+                    
+                    <div style="position: relative;">
+                        <div style="width: 100%; height: 280px; overflow: hidden; background: #1a1a2e;">
+                            <img src="https://currentaffairs.khanglobalstudies.com/wp-content/uploads/2024/07/Broadcasting-768x432.jpg" alt="Post Broadcasting" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+                        </div>
                         
-                        <div style="position: relative;">
-                            <div style="width: 100%; height: 280px; overflow: hidden; background: #1a1a2e;">
-                                <img src="https://currentaffairs.khanglobalstudies.com/wp-content/uploads/2024/07/Broadcasting-768x432.jpg" alt="Post Broadcasting" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
-                            </div>
-                            
-                            <div style="padding: 30px;">
-                                <h3 style="font-size: 1.5rem; font-weight: 600; margin: 0 0 15px 0; color: #4facfe;">
-                                    Post Broadcasting Services
-                                </h3>
-                                <p style="font-size: 1rem; line-height: 1.6; color: rgba(255, 255, 255, 0.7); margin: 0;">
-                                    A world-class streaming service. An end-to-end platform to engage, retain, and grow your audience on a global scale.
-                                </p>
-                            </div>
+                        <div style="padding: 30px;">
+                            <h3 style="font-size: 1.5rem; font-weight: 600; margin: 0 0 15px 0; color: #4facfe;">
+                                Post Broadcasting Services
+                            </h3>
+                            <p style="font-size: 1rem; line-height: 1.6; color: rgba(255, 255, 255, 0.7); margin: 0;">
+                                A world-class streaming service. An end-to-end platform to engage, retain, and grow your audience on a global scale.
+                            </p>
                         </div>
                     </div>
-                </a>
+                </div>
+            </a>
 
-                <!-- Product 4: AI Subtitle -->
-                <a href="https://demo.phont.ai/" target="_blank" style="text-decoration: none; color: inherit; display: block; transition: transform 0.3s ease;">
-                    <div style="background: rgba(255, 255, 255, 0.03); border-radius: 20px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.1); position: relative; transition: all 0.3s ease; height: 100%;">
-                        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(135deg, rgba(67, 233, 123, 0.3), rgba(56, 249, 215, 0.3)); opacity: 0; transition: opacity 0.3s ease; pointer-events: none;"></div>
+            <!-- Product 4: AI Subtitle -->
+            <a href="https://demo.phont.ai/" target="_blank" style="text-decoration: none; color: inherit; display: block; transition: transform 0.3s ease;">
+                <div style="background: rgba(255, 255, 255, 0.03); border-radius: 20px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.1); position: relative; transition: all 0.3s ease; height: 100%;">
+                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(135deg, rgba(67, 233, 123, 0.3), rgba(56, 249, 215, 0.3)); opacity: 0; transition: opacity 0.3s ease; pointer-events: none;"></div>
+                    
+                    <div style="position: relative;">
+                        <div style="width: 100%; height: 280px; overflow: hidden; background: #1a1a2e;">
+                            <img src="images/subtitle.jpeg" alt="AI Subtitle" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+                        </div>
                         
-                        <div style="position: relative;">
-                            <div style="width: 100%; height: 280px; overflow: hidden; background: #1a1a2e;">
-                                <img src="https://i.postimg.cc/rwwy5QXc/c14bcee4-168c-4bd9-a0b2-51701e2aa53a.jpg" alt="AI Subtitle" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
-                            </div>
-                            
-                            <div style="padding: 30px;">
-                                <h3 style="font-size: 1.5rem; font-weight: 600; margin: 0 0 15px 0; color: #43e97b;">
-                                    AI Subtitle
-                                </h3>
-                                <p style="font-size: 1rem; line-height: 1.6; color: rgba(255, 255, 255, 0.7); margin: 0;">
-                                    Advanced AI-powered subtitle platform providing real-time insights, audience behavior analysis, and content performance metrics for data-driven decisions.
-                                </p>
-                            </div>
+                        <div style="padding: 30px;">
+                            <h3 style="font-size: 1.5rem; font-weight: 600; margin: 0 0 15px 0; color: #43e97b;">
+                                AI Subtitle
+                            </h3>
+                            <p style="font-size: 1rem; line-height: 1.6; color: rgba(255, 255, 255, 0.7); margin: 0;">
+                                Advanced AI-powered subtitle platform providing real-time insights, audience behavior analysis, and content performance metrics for data-driven decisions.
+                            </p>
                         </div>
                     </div>
-                </a>
+                </div>
+            </a>
 
-                <!-- Product 5: Content Management -->
-                <a href="https://dev-tabsons.web.app/qcDashboard" target="_blank" style="text-decoration: none; color: inherit; display: block; transition: transform 0.3s ease;">
-                    <div style="background: rgba(255, 255, 255, 0.03); border-radius: 20px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.1); position: relative; transition: all 0.3s ease; height: 100%;">
-                        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(135deg, rgba(250, 112, 154, 0.3), rgba(254, 225, 64, 0.3)); opacity: 0; transition: opacity 0.3s ease; pointer-events: none;"></div>
+            <!-- Product 5: Content Management -->
+            <a href="https://dev-tabsons.web.app/qcDashboard" target="_blank" style="text-decoration: none; color: inherit; display: block; transition: transform 0.3s ease;">
+                <div style="background: rgba(255, 255, 255, 0.03); border-radius: 20px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.1); position: relative; transition: all 0.3s ease; height: 100%;">
+                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(135deg, rgba(250, 112, 154, 0.3), rgba(254, 225, 64, 0.3)); opacity: 0; transition: opacity 0.3s ease; pointer-events: none;"></div>
+                    
+                    <div style="position: relative;">
+                        <div style="width: 100%; height: 280px; overflow: hidden; background: #1a1a2e;">
+                            <img src="https://i.postimg.cc/y63L8HDd/Generated-Image-October-13-2025-9-49-PM.png" alt="Content Management" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+                        </div>
                         
-                        <div style="position: relative;">
-                            <div style="width: 100%; height: 280px; overflow: hidden; background: #1a1a2e;">
-                                <img src="https://i.postimg.cc/y63L8HDd/Generated-Image-October-13-2025-9-49-PM.png" alt="Content Management" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
-                            </div>
-                            
-                            <div style="padding: 30px;">
-                                <h3 style="font-size: 1.5rem; font-weight: 600; margin: 0 0 15px 0; color: #fa709a;">
-                                    Gyana AI
-                                </h3>
-                                <p style="font-size: 1rem; line-height: 1.6; color: rgba(255, 255, 255, 0.7); margin: 0;">
-                                    Comprehensive content management system with advanced metadata handling, automated workflows, and seamless integration with existing broadcast infrastructure.
-                                </p>
-                            </div>
+                        <div style="padding: 30px;">
+                            <h3 style="font-size: 1.5rem; font-weight: 600; margin: 0 0 15px 0; color: #fa709a;">
+                                Gyana AI
+                            </h3>
+                            <p style="font-size: 1rem; line-height: 1.6; color: rgba(255, 255, 255, 0.7); margin: 0;">
+                                Comprehensive content management system with advanced metadata handling, automated workflows, and seamless integration with existing broadcast infrastructure.
+                            </p>
                         </div>
                     </div>
-                </a>
+                </div>
+            </a>
 
-                <!-- Product 6: Multi-Platform Distribution -->
-                <a href="https://example.com/multi-platform-distribution" target="_blank" style="text-decoration: none; color: inherit; display: block; transition: transform 0.3s ease;">
-                    <div style="background: rgba(255, 255, 255, 0.03); border-radius: 20px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.1); position: relative; transition: all 0.3s ease; height: 100%;">
-                        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(135deg, rgba(255, 95, 109, 0.3), rgba(255, 154, 0, 0.3)); opacity: 0; transition: opacity 0.3s ease; pointer-events: none;"></div>
+            <!-- Product 6: Multi-Platform Distribution -->
+            <a href="https://example.com/multi-platform-distribution" target="_blank" style="text-decoration: none; color: inherit; display: block; transition: transform 0.3s ease;">
+                <div style="background: rgba(255, 255, 255, 0.03); border-radius: 20px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.1); position: relative; transition: all 0.3s ease; height: 100%;">
+                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(135deg, rgba(255, 95, 109, 0.3), rgba(255, 154, 0, 0.3)); opacity: 0; transition: opacity 0.3s ease; pointer-events: none;"></div>
+                    
+                    <div style="position: relative;">
+                        <div style="width: 100%; height: 280px; overflow: hidden; background: #1a1a2e;">
+                            <img src="https://picsum.photos/seed/platform/600/400" alt="Multi-Platform" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+                        </div>
                         
-                        <div style="position: relative;">
-                            <div style="width: 100%; height: 280px; overflow: hidden; background: #1a1a2e;">
-                                <img src="https://picsum.photos/seed/platform/600/400" alt="Multi-Platform" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
-                            </div>
-                            
-                            <div style="padding: 30px;">
-                                <h3 style="font-size: 1.5rem; font-weight: 600; margin: 0 0 15px 0; color: #ff5f6d;">
-                                    Multi-Platform Distribution
-                                </h3>
-                                <p style="font-size: 1rem; line-height: 1.6; color: rgba(255, 255, 255, 0.7); margin: 0;">
-                                    Seamlessly distribute content across multiple platforms including social media, OTT services, and traditional broadcast channels from a unified interface.
-                                </p>
-                            </div>
+                        <div style="padding: 30px;">
+                            <h3 style="font-size: 1.5rem; font-weight: 600; margin: 0 0 15px 0; color: #ff5f6d;">
+                                Multi-Platform Distribution
+                            </h3>
+                            <p style="font-size: 1rem; line-height: 1.6; color: rgba(255, 255, 255, 0.7); margin: 0;">
+                                Seamlessly distribute content across multiple platforms including social media, OTT services, and traditional broadcast channels from a unified interface.
+                            </p>
                         </div>
                     </div>
-                </a>
+                </div>
+            </a>
 
-            </div>
+            <!-- NEW SERVICE 1: Broadcast Monitoring -->
+            <a href="https://example.com/broadcast-monitoring" target="_blank" style="text-decoration: none; color: inherit; display: block; transition: transform 0.3s ease;">
+                <div style="background: rgba(255, 255, 255, 0.03); border-radius: 20px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.1); position: relative; transition: all 0.3s ease; height: 100%;">
+                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(135deg, rgba(116, 116, 255, 0.3), rgba(0, 150, 255, 0.3)); opacity: 0; transition: opacity 0.3s ease; pointer-events: none;"></div>
+                    
+                    <div style="position: relative;">
+                        <div style="width: 100%; height: 280px; overflow: hidden; background: #1a1a2e;">
+                            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Broadcast Monitoring" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+                        </div>
+                        
+                        <div style="padding: 30px;">
+                            <h3 style="font-size: 1.5rem; font-weight: 600; margin: 0 0 15px 0; color: #7474ff;">
+                                Broadcast Monitoring
+                            </h3>
+                            <p style="font-size: 1rem; line-height: 1.6; color: rgba(255, 255, 255, 0.7); margin: 0;">
+                                Track, record, and validate broadcast output with complete traceability. Monitor 800+ TV channels simultaneously with AI-driven analytics.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- NEW SERVICE 2: Content Analytics -->
+            <a href="https://example.com/content-analytics" target="_blank" style="text-decoration: none; color: inherit; display: block; transition: transform 0.3s ease;">
+                <div style="background: rgba(255, 255, 255, 0.03); border-radius: 20px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.1); position: relative; transition: all 0.3s ease; height: 100%;">
+                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(135deg, rgba(255, 105, 180, 0.3), rgba(255, 0, 128, 0.3)); opacity: 0; transition: opacity 0.3s ease; pointer-events: none;"></div>
+                    
+                    <div style="position: relative;">
+                        <div style="width: 100%; height: 280px; overflow: hidden; background: #1a1a2e;">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Content Analytics" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+                        </div>
+                        
+                        <div style="padding: 30px;">
+                            <h3 style="font-size: 1.5rem; font-weight: 600; margin: 0 0 15px 0; color: #ff69b4;">
+                                Content Analytics
+                            </h3>
+                            <p style="font-size: 1rem; line-height: 1.6; color: rgba(255, 255, 255, 0.7); margin: 0;">
+                                Transform unstructured media into searchable, actionable data. Get insights on news content, ad tracking, and audience engagement.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- NEW SERVICE 3: Radio Monitoring -->
+            <a href="https://example.com/radio-monitoring" target="_blank" style="text-decoration: none; color: inherit; display: block; transition: transform 0.3s ease;">
+                <div style="background: rgba(255, 255, 255, 0.03); border-radius: 20px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.1); position: relative; transition: all 0.3s ease; height: 100%;">
+                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(135deg, rgba(50, 205, 50, 0.3), rgba(0, 255, 127, 0.3)); opacity: 0; transition: opacity 0.3s ease; pointer-events: none;"></div>
+                    
+                    <div style="position: relative;">
+                        <div style="width: 100%; height: 280px; overflow: hidden; background: #1a1a2e;">
+                            <img src="https://images.unsplash.com/photo-1633294666093-ab54f43a947a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687" alt="Radio Monitoring" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+                        </div>
+                        
+                        <div style="padding: 30px;">
+                            <h3 style="font-size: 1.5rem; font-weight: 600; margin: 0 0 15px 0; color: #32cd32;">
+                                Radio Monitoring
+                            </h3>
+                            <p style="font-size: 1rem; line-height: 1.6; color: rgba(255, 255, 255, 0.7); margin: 0;">
+                                Comprehensive radio content analysis. Monitor news, songs, and promos across radio networks with AI-powered detection.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- NEW SERVICE 4: Ad Insertion -->
+            <a href="https://example.com/ad-insertion" target="_blank" style="text-decoration: none; color: inherit; display: block; transition: transform 0.3s ease;">
+                <div style="background: rgba(255, 255, 255, 0.03); border-radius: 20px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.1); position: relative; transition: all 0.3s ease; height: 100%;">
+                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(135deg, rgba(255, 165, 0, 0.3), rgba(255, 215, 0, 0.3)); opacity: 0; transition: opacity 0.3s ease; pointer-events: none;"></div>
+                    
+                    <div style="position: relative;">
+                        <div style="width: 100%; height: 280px; overflow: hidden; background: #1a1a2e;">
+                            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Ad Insertion" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+                        </div>
+                        
+                        <div style="padding: 30px;">
+                            <h3 style="font-size: 1.5rem; font-weight: 600; margin: 0 0 15px 0; color: #ffa500;">
+                                Dynamic Ad Insertion
+                            </h3>
+                            <p style="font-size: 1rem; line-height: 1.6; color: rgba(255, 255, 255, 0.7); margin: 0;">
+                                Deliver contextually targeted ads using intelligent metadata and audience insights. Programmatic ad insertion for optimized revenue.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- NEW SERVICE 5: Music IP Detection -->
+            <a href="https://example.com/music-ip-detection" target="_blank" style="text-decoration: none; color: inherit; display: block; transition: transform 0.3s ease;">
+                <div style="background: rgba(255, 255, 255, 0.03); border-radius: 20px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.1); position: relative; transition: all 0.3s ease; height: 100%;">
+                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(135deg, rgba(138, 43, 226, 0.3), rgba(75, 0, 130, 0.3)); opacity: 0; transition: opacity 0.3s ease; pointer-events: none;"></div>
+                    
+                    <div style="position: relative;">
+                        <div style="width: 100%; height: 280px; overflow: hidden; background: #1a1a2e;">
+                            <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Music IP Detection" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+                        </div>
+                        
+                        <div style="padding: 30px;">
+                            <h3 style="font-size: 1.5rem; font-weight: 600; margin: 0 0 15px 0; color: #8a2be2;">
+                                Music IP Detection
+                            </h3>
+                            <p style="font-size: 1rem; line-height: 1.6; color: rgba(255, 255, 255, 0.7); margin: 0;">
+                                Protect your intellectual property and ensure compliance. AI-powered detection of music usage across broadcasts.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- NEW SERVICE 6: Broadcast Infrastructure -->
+            <a href="https://example.com/broadcast-infrastructure" target="_blank" style="text-decoration: none; color: inherit; display: block; transition: transform 0.3s ease;">
+                <div style="background: rgba(255, 255, 255, 0.03); border-radius: 20px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.1); position: relative; transition: all 0.3s ease; height: 100%;">
+                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(135deg, rgba(0, 191, 255, 0.3), rgba(30, 144, 255, 0.3)); opacity: 0; transition: opacity 0.3s ease; pointer-events: none;"></div>
+                    
+                    <div style="position: relative;">
+                        <div style="width: 100%; height: 280px; overflow: hidden; background: #1a1a2e;">
+                            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Broadcast Infrastructure" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+                        </div>
+                        
+                        <div style="padding: 30px;">
+                            <h3 style="font-size: 1.5rem; font-weight: 600; margin: 0 0 15px 0; color: #00bfff;">
+                                Broadcast Infrastructure
+                            </h3>
+                            <p style="font-size: 1rem; line-height: 1.6; color: rgba(255, 255, 255, 0.7); margin: 0;">
+                                State-of-the-art headend services with robust data center RF. 24x7 uninterrupted operations with enterprise-grade uptime.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
         </div>
-    </section>
+    </div>
+</section>
       
         <div class="page-break">
             <div class="page-break-line"></div>
         </div>
+
+<div class="container vision-path-section" id="vision-path">
+            <div class="container">
+              <h2 class="vision-path-title">Vision Path</h2>
+              
+              <!-- Carousel Container -->
+              <div class="carousel-container">
+                
+                <!-- Cards Wrapper -->
+                <div id="cardsWrapper" class="cards-wrapper">
+                  
+                  <!-- Card 1 -->
+                  <div class="carousel-card">
+                    <div class="card-glow" style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.3), rgba(118, 75, 162, 0.3));"></div>
+                    <div class="card-content">
+                      <div class="card-icon-wrapper" style="background: rgba(102, 126, 234, 0.2); border: 1px solid rgba(102, 126, 234, 0.3);">
+                        <i class="fas fa-eye-slash" style="color: #667eea;"></i>
+                      </div>
+                      <h3 class="card-title">Nudity and obscene language detection and Blurring</h3>
+                      <ul class="card-list">
+                        <li>
+                          <span class="bullet" style="background: #667eea;"></span>
+                          Implement AI-Powered Content Moderation for real-time detection.
+                        </li>
+                        <li>
+                          <span class="bullet" style="background: #667eea;"></span>
+                          Auto-blur explicit visuals and censor inappropriate language.
+                        </li>
+                        <li>
+                          <span class="bullet" style="background: #667eea;"></span>
+                          Improve user trust by ensuring a safe platform environment.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+          
+                  <!-- Card 2 -->
+                  <div class="carousel-card">
+                    <div class="card-glow" style="background: linear-gradient(135deg, rgba(240, 147, 251, 0.3), rgba(245, 87, 108, 0.3));"></div>
+                    <div class="card-content">
+                      <div class="card-icon-wrapper" style="background: rgba(240, 147, 251, 0.2); border: 1px solid rgba(240, 147, 251, 0.3);">
+                        <i class="fas fa-star" style="color: #f093fb;"></i>
+                      </div>
+                      <h3 class="card-title">Automatic highlights - AGENTS</h3>
+                      <ul class="card-list">
+                        <li>
+                          <span class="bullet" style="background: #f093fb;"></span>
+                          Implement AI-Powered Content Moderation for real-time detection.
+                        </li>
+                        <li>
+                          <span class="bullet" style="background: #f093fb;"></span>
+                          Auto-blur explicit visuals and censor inappropriate language.
+                        </li>
+                        <li>
+                          <span class="bullet" style="background: #f093fb;"></span>
+                          Improve user trust by ensuring a safe platform environment.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+          
+                  <!-- Card 3 -->
+                  <div class="carousel-card">
+                    <div class="card-glow" style="background: linear-gradient(135deg, rgba(79, 172, 254, 0.3), rgba(0, 242, 254, 0.3));"></div>
+                    <div class="card-content">
+                      <div class="card-icon-wrapper" style="background: rgba(79, 172, 254, 0.2); border: 1px solid rgba(79, 172, 254, 0.3);">
+                        <i class="fas fa-closed-captioning" style="color: #4facfe;"></i>
+                      </div>
+                      <h3 class="card-title">Subtitling</h3>
+                      <ul class="card-list">
+                        <li>
+                          <span class="bullet" style="background: #4facfe;"></span>
+                          Implement real-time transcription for audio and video content.
+                        </li>
+                        <li>
+                          <span class="bullet" style="background: #4facfe;"></span>
+                          Support multiple languages to improve accessibility and user engagement.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+          
+                  <!-- Card 4 -->
+                  <div class="carousel-card">
+                    <div class="card-glow" style="background: linear-gradient(135deg, rgba(67, 233, 123, 0.3), rgba(56, 249, 215, 0.3));"></div>
+                    <div class="card-content">
+                      <div class="card-icon-wrapper" style="background: rgba(67, 233, 123, 0.2); border: 1px solid rgba(67, 233, 123, 0.3);">
+                        <i class="fas fa-file-alt" style="color: #43e97b;"></i>
+                      </div>
+                      <h3 class="card-title">Automatic summary - chat-based agent</h3>
+                      <ul class="card-list">
+                        <li>
+                          <span class="bullet" style="background: #43e97b;"></span>
+                          Integrate an AI model that generates concise summaries of lengthy chat conversations.
+                        </li>
+                        <li>
+                          <span class="bullet" style="background: #43e97b;"></span>
+                          Helps users review important details efficiently.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+          
+                  <!-- Card 5 -->
+                  <div class="carousel-card">
+                    <div class="card-glow" style="background: linear-gradient(135deg, rgba(250, 112, 154, 0.3), rgba(254, 225, 64, 0.3));"></div>
+                    <div class="card-content">
+                      <div class="card-icon-wrapper" style="background: rgba(250, 112, 154, 0.2); border: 1px solid rgba(250, 112, 154, 0.3);">
+                        <i class="fas fa-video" style="color: #fa709a;"></i>
+                      </div>
+                      <h3 class="card-title">Automates video - chat-based agent</h3>
+                      <ul class="card-list">
+                        <li>
+                          <span class="bullet" style="background: #fa709a;"></span>
+                          Develop a system to convert-based interactions into engaging video content.
+                        </li>
+                        <li>
+                          <span class="bullet" style="background: #fa709a;"></span>
+                          Useful for visual explanations, tutorials, or automated responses.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+          
+                </div>
+          
+                <!-- Dots Indicator -->
+                <div id="dotsContainer" class="dots-container"></div>
+              </div>
+            </div>
+          </div>
 
         <footer class="footer-section" id="contact" style="padding: 10px 40px 0 40px; position: relative; overflow: hidden;">
             <div class="container" style="max-width: 1200px; position: relative; z-index: 1;">
@@ -350,7 +603,7 @@
     </main>
 
 
-    <!-- JavaScript for the Digital Synapse Background -->
+    <!-- JavaScript for the Digital Synapse Background and Video Control -->
     <script>
         const canvas = document.getElementById('synapse-canvas');
         const ctx = canvas.getContext('2d');
@@ -426,6 +679,23 @@
         window.addEventListener('mouseout', function(){ mouse.x = undefined; mouse.y = undefined; });
         init();
         animate();
+    </script>
+    <script>
+        // Configure video to start at 5-second mark
+        document.addEventListener('DOMContentLoaded', function() {
+            const heroVideo = document.getElementById('heroVideo');
+            if (heroVideo) {
+                heroVideo.addEventListener('loadedmetadata', function() {
+                    this.currentTime = 5;
+                });
+                // Ensure video starts playing from 5 seconds
+                heroVideo.addEventListener('play', function() {
+                    if (this.currentTime < 5) {
+                        this.currentTime = 5;
+                    }
+                });
+            }
+        });
     </script>
     <script>
         const wrapper = document.getElementById('cardsWrapper');
