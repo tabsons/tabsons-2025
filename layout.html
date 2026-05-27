@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description"
+        content="Discover Tabsons' AI-driven media solutions at BROADCAST INDIA 2025. Explore the future of content with our innovative cloud-native ecosystem.">
+    <meta name="keywords"
+        content="Tabsons, Broadcast India 2025, AI dubbing, video streaming, content management, AI subtitle, media solutions">
+    <meta name="author" content="Tabsons">
+    <meta property="og:title" content="Tabsons at BROADCAST INDIA 2025 | FOR INFINITE POSSIBILITIES">
+    <meta property="og:description"
+        content="Discover Tabsons' AI-driven media solutions at BROADCAST INDIA 2025. Explore the future of content with our innovative cloud-native ecosystem.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tabsons.co.in">
+    <meta name="theme-color" content="#00E5FF">
+    <link rel="icon" href="Logo low res.png" type="image/png">
+    <title>Tabsons at BROADCAST INDIA 2025 | FOR INFINITE POSSIBILITIES</title>
+
+    <!-- FONTS: Oswald for Headlines, Lato for Body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Oswald:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(to bottom, #242c54, #7d0f74);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar-content">
+            <!-- Logo -->
+            <div class="navbar-logo">
+                <img src="Logo low res.png" alt="Tabsons Logo" class="logo-img">
+            </div>
+        </div>
+
+        <div class="contact-form-wrapper">
+
+            <h2 class="contact-form-title">We Will Reach You Soon</h2>
+
+            <form id="contactForm" class="contact-form">
+
+                <!-- Name -->
+                <input type="text" name="name" placeholder="Your Name" class="contact-input" required>
+
+                <!-- Email -->
+                <input type="email" name="email" placeholder="Your Email" class="contact-input" required>
+
+                <!-- Company -->
+                <input type="text" name="company" placeholder="Company Name" class="contact-input" required>
+
+                <!-- Phone Optional -->
+                <input type="tel" name="phone" placeholder="Phone Number (Optional)" class="contact-input">
+
+                <!-- Submit -->
+                <button type="submit" class="submit-btn">
+                    Submit
+                </button>
+
+            </form>
+
+            <!-- Thank You Message -->
+            <div id="thankYouMessage" class="thank-you-message">
+                Thank you for contacting us.<br>
+                We will reach out to you soon.
+
+                <br><br>
+
+                <button class="home-btn" onclick="window.location.href='index.html'">
+                    Back to Home
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script type="module">
+
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-app.js";
+
+        import {
+            getFirestore,
+            collection,
+            addDoc
+        } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-firestore.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyDU0w3gR6X-AhaytsGgucZ7mE2ZouI8nU0",
+            authDomain: "tabsons-ai.firebaseapp.com",
+            projectId: "tabsons-ai",
+            storageBucket: "tabsons-ai.firebasestorage.app",
+            messagingSenderId: "643032834552",
+            appId: "1:643032834552:web:aef739cd415b164440760d"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+
+        const form = document.getElementById("contactForm");
+        const thankYouMessage = document.getElementById("thankYouMessage");
+
+        form.addEventListener("submit", async (e) => {
+
+            e.preventDefault();
+
+            const formData = {
+                name: form.name.value,
+                email: form.email.value,
+                company: form.company.value,
+                phone: form.phone.value
+            };
+
+            try {
+
+                await addDoc(collection(db, "contacts"), formData);
+
+                form.reset();
+
+                form.style.display = "none";
+                thankYouMessage.style.display = "block";
+
+            } catch (error) {
+
+                console.error(error);
+                alert("Failed to submit form");
+
+            }
+
+        });
+
+    </script>
+
+
+
+</body>
+
+</html>
